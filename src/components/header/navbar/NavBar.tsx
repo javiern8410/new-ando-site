@@ -27,7 +27,7 @@ const NavBar = () => {
                         </NavDropdown>
                     ) : (
                         <Navbar.Text>
-                             <a href="asdasdd" onClick={(e) => {e.preventDefault(); setLogin(true)}}>Sig In</a>
+                             <a href="/asdasdd" onClick={(e) => {e.preventDefault(); setLogin(true)}}>Sig In</a>
                         </Navbar.Text>
                     )}
                 </Nav>
