@@ -1,0 +1,33 @@
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0, 0.6) !important;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+        li {
+            float: left;
+            
+            a {
+                display: block;
+                color: #b4b9bd;
+                text-align: center;
+                padding: 20px 18px;
+                text-decoration: none;
+                border-bottom: 4px solid transparent;
+                transition: all 0.4s ease-out;
+
+                &:hover {
+                    color: white;
+                    border-bottom: 4px solid white;
+                }
+              }
+        }
+    }
+}

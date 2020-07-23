@@ -1,0 +1,17 @@
+.card-img-text{
+    color: #F2F2F2;
+}
+
+.card {
+    div {
+        overflow: hidden;
+    }
+    img:hover {
+        transform: scale(1.2);
+        transition: all 0.4s ease-in-out ;
+    }
+
+    .person-icon {
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,77 @@
+@import './styles/';
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-template-rows: 3fr 1fr 3fr;
+    // grid-auto-rows: 2fr;
+    gap: 1em;
+    align-items: stretch;
+    
+    div.box {
+        background-color: #F2F2F2;
+    }
+    
+    .header {
+        grid-column: 1;
+        position: relative; 
+        height: 420px;
+        background-image: url('./images/tyler-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.9;
+        width: 100%;
+    }
+
+    .brand-row {
+        height: 300px auto;
+        background-color: #F2f2f2;
+        padding: 1em;
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            gap: 1em;
+        }
+    }
+
+    .portfolio-row {
+        height: auto;
+        padding: 1em;
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1em;
+        }
+    }
+    
+    .about-row {
+        height: 300px auto;
+        padding: 1em;
+        background-color: #F2f2f2;
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            gap: 1em;
+        }
+    }
+    
+    .footer {
+        background-color: #2a2f42;
+        height: 400px;
+        color: white;
+    }
+
+    .center-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+}
+
+
+

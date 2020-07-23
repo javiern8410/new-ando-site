@@ -1,0 +1,17 @@
+{
+    "CEO" : {
+        "name" : "José Manuel Peña",
+        "description": "CEO & Founder at AndoPQ Software Solution. Engineering in Telecommunications and Physics",
+        "picture" : "ceo.png"
+    },
+    "DEVELOPER" : {
+        "name" : "Javier Nieve Izaguirre",
+        "description": "Developer & Co-Founder at AndoPQ Software Solution. Computer Science Engineer",
+        "picture" : "developer.png"
+    },
+    "MARKETING" : {
+        "name" : "Gisselle Peña de la Vega",
+        "description": "Marketing Solutions & Co-Founder at AndoPQ Software Solution. Master in Business Management and Marketing Solutions",
+        "picture" : "woman.png"
+    }
+}
