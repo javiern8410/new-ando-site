@@ -6,6 +6,19 @@ import WorkerCard from './components/cards/WorkerCard'
 import Portfolio from './components/portfolio/Portfolio'
 
 function App() {
+
+  const scrollTop = () => {
+    try {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    } catch (error) {
+      window.scrollTo(0, 0);
+    }
+  };
+
   return (
     <div className="grid-container">
         <div className="header">
@@ -22,11 +35,11 @@ function App() {
           <div className="center-title">
             <h1>About our team</h1>
           </div>
-          <div className="container">
+          <div className="container" id="portfolio">
             <Portfolio />
           </div>
         </div>
-        <div className="about-row">
+        <div className="about-row" id="team">
           <div className="center-title">
             <h1>About our team</h1>
           </div>
@@ -37,8 +50,12 @@ function App() {
           </div>
         </div>
         <div className="footer">
-          asdasd234234324
+          <div>adasdadsaddasd</div>
+          <div>asdasdasdd</div>
+          <div>adasdasdasdasdasdasd</div>
+          <div>adasdasdasdasdasdasd</div>
         </div>
+        <button onClick={() => scrollTop()} id="to-top-btn" title="Go to top">Top</button>
     </div>
   );
 }

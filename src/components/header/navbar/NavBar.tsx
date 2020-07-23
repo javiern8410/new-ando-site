@@ -7,6 +7,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const NavBar = () => {
     const [login, setLogin] = React.useState(false)
+
+    const toggleLogin = (e:any, loginState:any) => {
+        e.preventDefault();
+        setLogin(loginState)
+    }
+
 ;    return (
         <Navbar collapseOnSelect expand="lg" bg="dark" sticky='top' variant="dark" className="site-navbar">
             <Navbar.Brand href="/asdasdadsd"><Logo /></Navbar.Brand>
@@ -15,20 +21,18 @@ const NavBar = () => {
                 <Nav className="mr-auto">
                 </Nav>
                 <Nav>
-                    <Nav.Link href="/asdadsasd">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                    </Nav.Link>
+                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                    <Nav.Link href="#team">Team</Nav.Link>
                     {login ? (
                         <NavDropdown title="John Doe" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="/asdadsada">Dashboard</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/sdfsdf" onClick={() => setLogin(false)}>Logout</NavDropdown.Item>
+                            <NavDropdown.Item href="/sdfsdf" onClick={(e) => toggleLogin(e, false)}>Logout</NavDropdown.Item>
                         </NavDropdown>
                     ) : (
-                        <Navbar.Text>
-                             <a href="/asdasdd" onClick={(e) => {e.preventDefault(); setLogin(true)}}>Sig In</a>
-                        </Navbar.Text>
+                        <Nav.Link href="/asdasdd" onClick={(e:any) => toggleLogin(e, true)}>
+                            Sig In
+                        </Nav.Link>
                     )}
                 </Nav>
             </Navbar.Collapse>

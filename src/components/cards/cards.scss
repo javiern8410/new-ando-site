@@ -3,13 +3,23 @@
 }
 
 .card {
-    div {
-        overflow: hidden;
+    
+    &.brand-card {
+        div {
+            overflow: hidden;
+        }
+
+        img {
+            filter: grayscale(60%)
+        }
+        
+        img:hover {
+            transform: scale(1.4);
+            transition: all 0.4s ease-in-out ;
+            filter: grayscale(0%)
+        }
     }
-    img:hover {
-        transform: scale(1.2);
-        transition: all 0.4s ease-in-out ;
-    }
+
 
     .person-icon {
         border-radius: 50%;

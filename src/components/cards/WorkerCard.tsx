@@ -8,7 +8,7 @@ const WorkerCard: React.FunctionComponent<any> = ({position}) => {
     console.log(teamData);
 
     return (
-        <Card style={{ width: '18rem', border: '0px' }}>
+        <Card style={{ width: '18rem', border: '0px', backgroundColor: 'transparent' }}>
             <div className="person-icon">
                 <Card.Img variant="top" src={imageUrl} style={{overflow: 'hidden'}} />
             </div>

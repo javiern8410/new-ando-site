@@ -7,7 +7,7 @@ const BasicCard: React.FunctionComponent<any> = ({text, image = 'devices.jpg'}) 
     const imageUrl = require(`../../images/cards/${image}`);
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} className="brand-card">
             <div>
                 <Card.Img variant="top" src={imageUrl} style={{overflow: 'hidden'}} />
             </div>
@@ -17,7 +17,7 @@ const BasicCard: React.FunctionComponent<any> = ({text, image = 'devices.jpg'}) 
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">More...</Button>
             </Card.Body>
         </Card>
     );
