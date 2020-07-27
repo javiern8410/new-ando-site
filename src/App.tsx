@@ -33,7 +33,7 @@ function App() {
         </div>
         <div className="portfolio-row">
           <div className="center-title">
-            <h1>About our team</h1>
+            <h1>Works</h1>
           </div>
           <div className="container" id="portfolio">
             <Portfolio />
@@ -43,7 +43,7 @@ function App() {
           <div className="center-title">
             <h1>About our team</h1>
           </div>
-          <div className="container">
+          <div className="container padding-top-25">
             <WorkerCard position="CEO" />
             <WorkerCard position="DEVELOPER" />
             <WorkerCard position="MARKETING" />
