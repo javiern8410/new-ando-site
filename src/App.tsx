@@ -4,6 +4,8 @@ import Header from './components/header/Header'
 import BasicCard from './components/cards/BasicCard'
 import WorkerCard from './components/cards/WorkerCard'
 import Portfolio from './components/portfolio/Portfolio'
+import CommentForm from './components/comments/CommentForm'
+import CommentList from './components/comments/CommentList'
 
 function App() {
 
@@ -50,10 +52,15 @@ function App() {
           </div>
         </div>
         <div className="footer">
-          <div>adasdadsaddasd</div>
-          <div>asdasdasdd</div>
-          <div>adasdasdasdasdasdasd</div>
-          <div>adasdasdasdasdasdasd</div>
+          <div>
+            asdadadsdd
+          </div>
+          <div>
+            <CommentList />
+          </div>
+          <div>
+            <CommentForm />
+          </div>
         </div>
         <button onClick={() => scrollTop()} id="to-top-btn" title="Go to top">Top</button>
     </div>
