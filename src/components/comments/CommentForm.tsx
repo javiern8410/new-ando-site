@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './comment-form.scss';
 import { db } from '../../firebase'
 
@@ -32,11 +32,6 @@ const CommentForm: React.FunctionComponent<any> = () => {
         }
 
     };
-
-    useEffect(() => {
-        // Actualiza el título del documento usando la API del navegador
-        console.log(comment);
-    }, [comment]);
 
     return (
         <div className="comment-form">

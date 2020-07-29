@@ -41,6 +41,12 @@ function App() {
             <Portfolio />
           </div>
         </div>
+        <div className="comment-row" id="comments">
+          <div className="center-title text-white">
+            <h1>What People Say</h1>
+          </div>
+          <CommentList />
+        </div>
         <div className="about-row" id="team">
           <div className="center-title">
             <h1>About our team</h1>
@@ -56,9 +62,9 @@ function App() {
             asdadadsdd
           </div>
           <div>
-            <CommentList />
+            asdasdasdasd
           </div>
-          <div>
+          <div className="comment-container">
             <CommentForm />
           </div>
         </div>

@@ -1,0 +1,30 @@
+.comment-list {
+    width: 100%;
+    
+    .comments {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        justify-content: space-between;
+        justify-items: center;
+        grid-row-gap: 10px;
+    }
+
+    .pager {
+        text-align: center;
+        margin-top: 2em;
+    }
+    
+    .btn:disabled {
+        background: #F2F2F2 !important;
+        color: rgb(20, 25, 75);
+    }
+    
+    h1  {
+        color: #F2F2F2;
+    }
+
+    .fa {
+        margin-left: -10px;
+        margin-right: 8px;
+      }
+}
