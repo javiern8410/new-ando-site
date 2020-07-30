@@ -3,7 +3,7 @@ import './pager.scss';
 
 const SingleComment: React.FunctionComponent<any> = ({ page, perPage, size, onPageChange }) => {
 
-    const setMaxPage = (Math.max(1, Math.ceil(size / perPage)));
+    const setMaxPage = (Math.ceil(size / perPage));
 
     return (
         <div className="pager">
@@ -15,7 +15,7 @@ const SingleComment: React.FunctionComponent<any> = ({ page, perPage, size, onPa
                             key={i}
                             onClick={() => onPageChange(i + 1)}
                         >
-                            <i className={`fa fa-circle pager-icon ${i === (page-1) && 'active'}`}></i>
+                            <i className={`fa fa-circle fa-lg pager-icon ${i === (page-1) && 'active'}`}></i>
                         </span>
                     ))
             }

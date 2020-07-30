@@ -33,11 +33,11 @@ function App() {
             <BasicCard text="Android & IOS App Design" image="app-develop.jpg" />
           </div>
         </div>
-        <div className="portfolio-row">
+        <div className="portfolio-row" id="portfolio">
           <div className="center-title">
             <h1>Works</h1>
           </div>
-          <div className="container" id="portfolio">
+          <div className="container">
             <Portfolio />
           </div>
         </div>
@@ -68,7 +68,9 @@ function App() {
             <CommentForm />
           </div>
         </div>
-        <button onClick={() => scrollTop()} id="to-top-btn" title="Go to top">Top</button>
+        <button onClick={() => scrollTop()} id="to-top-btn" title="Top">
+          <i className="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+        </button>
     </div>
   );
 }

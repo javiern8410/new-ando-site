@@ -1,12 +1,13 @@
 import React from 'react'
 import './single-comment.scss';
+import Avatar from '../avatar/Avatar'
 
 const SingleComment: React.FunctionComponent<any> = ({ comment }) => {
 
     return (
         <div className="comment-card">
-            <div className="avatar">
-                <img src={`https://ui-avatars.com/api/?name=${comment.name}&bold=true&background=0D8ABC&color=fff&rounded=true&size=80`} alt={comment.name} />
+            <div className="avatar-container">
+                <Avatar name={comment.name} />
             </div>
             <div className="container">
                 <p>

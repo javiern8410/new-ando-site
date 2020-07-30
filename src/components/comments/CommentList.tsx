@@ -9,8 +9,7 @@ const CommentList: React.FunctionComponent<any> = () => {
     const [comments, setComments] = useState([]);
     const [loading, setLoading] = useState(false);
     const [page, setPage] = useState(1)
-    const expectedWidth = Math.floor(window.innerWidth / 500);
-    console.log(window.innerWidth, expectedWidth);
+    const expectedWidth = Math.floor(window.innerWidth / 500) > 1 ? Math.floor(window.innerWidth / 500) : 1;
     const perPage = expectedWidth > 3 ? 3 : expectedWidth;
 
     const getComments = async () => {
@@ -23,14 +22,22 @@ const CommentList: React.FunctionComponent<any> = () => {
             db.collection("comments").doc('id').set({name:'UpdatedName'}) 
             */
 
-            db.collection('comments').onSnapshot((querySnapshot) => {
+            /* db.collection('comments').onSnapshot((querySnapshot) => {
                 const fbComents:any = [];
                 querySnapshot.forEach(comment => {
                     fbComents.push({...comment.data()});
                 });
                 console.log(fbComents);
                 setComments(fbComents);
-            })
+            }) */
+
+            const fbComents:any = [];
+            const data = await db.collection('comments').get();
+            data.docs.forEach(comment => {
+                fbComents.push({...comment.data()})
+            });
+            console.log(fbComents);
+            setComments(fbComents);
             setLoading(false);
         } catch (error) {
             console.log(error);
@@ -45,16 +52,24 @@ const CommentList: React.FunctionComponent<any> = () => {
 
     return (
         <div className="comment-list">
-            {loading && ' loading...'}
+            {
+                loading && 
+                    <div className="spinner">
+                        <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    </div>
+                
+            }
             <div className="comments">
                 {
-                    comments.length > 0 && comments.slice((page - 1) * perPage, (page - 1) * perPage + perPage).map((comment, index) => {
+                    !loading && comments.length > 0 && comments.slice((page - 1) * perPage, (page - 1) * perPage + perPage).map((comment, index) => {
                         return <SingleComment comment={comment} key={index} />
                     })
                 }
             </div>
             <div className="pager"> 
-                <Pager page={page} perPage={perPage} size={comments.length} onPageChange={setPage} />
+            {
+                !loading && comments.length > 0 && <Pager page={page} perPage={perPage} size={comments.length} onPageChange={setPage} />
+            }
             </div>
         </div>
     );
