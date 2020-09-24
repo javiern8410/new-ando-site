@@ -1,26 +1,41 @@
-import React from 'react';
-import './navbar.scss';
-import Logo from '../logo/Logo';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
+import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
+import "./navbar.scss";
+import Logo from "../logo/Logo";
 
-const NavBar = () => {
+const NavBar: React.FunctionComponent = () => {
 
-;    return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" sticky='top' variant="dark" className="site-navbar">
-            <Navbar.Brand href="#"><Logo /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                </Nav>
-                <Nav>
-                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                    <Nav.Link href="#comments">Comments</Nav.Link>
-                    <Nav.Link href="#team">Team</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    );
+  const uncheckB = () => {
+    let element:any = document.getElementById("nav-check");  
+    element.checked = false;
+  }
+  
+
+  return (
+    <div className="nav">
+      <input type="checkbox" id="nav-check" />
+      <div className="nav-header">
+        <div className="nav-title">
+          <Logo />
+        </div>
+      </div>
+      <div className="nav-btn">
+        <label htmlFor="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div className="nav-links">
+        <Link to="/#portfolio" onClick={uncheckB}>
+          Portfolio
+        </Link>
+        <Link to="/#team" onClick={uncheckB}>
+          Team
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default NavBar;

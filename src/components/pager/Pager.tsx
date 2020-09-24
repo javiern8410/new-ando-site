@@ -1,7 +1,14 @@
 import React from 'react'
 import './pager.scss';
 
-const SingleComment: React.FunctionComponent<any> = ({ page, perPage, size, onPageChange }) => {
+export interface PagerProps {
+    page: number;
+    size: number;
+    perPage: number;
+	onPageChange: Function;
+}
+
+const SingleComment: React.FunctionComponent<PagerProps> = ({ page, perPage, size, onPageChange }) => {
 
     const setMaxPage = (Math.ceil(size / perPage));
 

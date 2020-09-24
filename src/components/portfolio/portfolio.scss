@@ -1,3 +1,33 @@
 .text {
-    color: white;
+  color: white;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: space-between;
+  justify-items: center;
+  grid-row-gap: 10px;
+
+  .pic-visible {
+    transition: all 1s ease-out;
+  }
+
+  .pic-hide {
+    transition: all 1s ease-out;
+    display: none;
+  }
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+
+    span {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 }

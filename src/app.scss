@@ -4,8 +4,6 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  // grid-template-rows: 3fr 1fr 3fr;
-  // grid-auto-rows: 2fr;
   gap: 1em;
   align-items: stretch;
 
@@ -26,15 +24,15 @@
   }
 
   .brand-row {
-    height: 300px auto;
+    min-height: 300px;
     background-color: #f2f2f2;
     padding: 1em;
 
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
       justify-items: center;
-      gap: 1em;
+      grid-gap: 1em;
     }
   }
 
@@ -126,6 +124,12 @@
 
   .padding-top-25 {
     padding-top: 25px;
+  }
+
+  .home-paragrahp {
+    color: rgb(92, 90, 90);
+    text-align: left;
+    margin: 20px;
   }
 }
 

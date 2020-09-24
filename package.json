@@ -10,12 +10,17 @@
     "@types/node": "^12.12.50",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-router-hash-link": "^1.2.1",
     "bootstrap": "^4.5.0",
     "firebase": "^7.17.1",
+    "infinite-react-carousel": "^1.2.11",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.0.0",
     "react-scripts": "3.4.1",
     "typescript": "^3.7.5"
   },
@@ -28,6 +33,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "typings": "./types.d.ts",
   "browserslist": {
     "production": [
       ">0.2%",
