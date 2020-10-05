@@ -1,5 +1,4 @@
 import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
 import "./navbar.scss";
 import Logo from "../logo/Logo";
 
@@ -27,12 +26,12 @@ const NavBar: React.FunctionComponent = () => {
         </label>
       </div>
       <div className="nav-links">
-        <Link to="/#portfolio" onClick={uncheckB}>
-          Portfolio
-        </Link>
-        <Link to="/#team" onClick={uncheckB}>
-          Team
-        </Link>
+        <a href="#comment" onClick={uncheckB}>
+          Opiniones
+        </a>
+        <a href="#contact" onClick={uncheckB}>
+          Contacto
+        </a>
       </div>
     </div>
   );

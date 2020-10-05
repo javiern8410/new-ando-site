@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+
+.main-content {
+    position: relative;
+    margin-top: -200px;
+
+    .justify-end {
+        justify-items: end;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        grid-gap: 1em;
+    
+        h2 {
+          color: $color-white;
+        }
+      }
+}
+
+.brand-row {
+  min-height: 300px;
+  padding: 1em;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    justify-items: end;
+    grid-gap: 1em;
+
+    h2 {
+      color: $color-white;
+    }
+  }
+}

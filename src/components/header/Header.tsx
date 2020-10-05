@@ -5,18 +5,13 @@ import './header.scss';
 
 const Header = () => {
     return (
-        <div className="header-content">
+        <div className="header">
             <NavBar />
-            
             <div className="slogan white">
-                {/* <img src={logo} alt=""/> */}
                 <h1>
-                    <i>
-                        #Best Software Solutions
-                    </i>
-                </h1>    
+                    Sabes Cual es el Secreto de las Personas Exitosas?
+                </h1>
             </div>
-
         </div>
     );
 };

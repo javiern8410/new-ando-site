@@ -35,27 +35,26 @@ const CommentForm: React.FunctionComponent<any> = () => {
 
     return (
         <div className="comment-form">
-            <h2>
-                Comment
-                {loading && ' loading...'}
-            </h2>
+            <h3>
+                Deje su comentario
+            </h3>
             <div>
-                <input type="text" name="name" value={comment.name} className="form-control" id="inlineFormInput" placeholder="Name" onChange={handleChange} />
+                <input type="text" name="name" value={comment.name} className="form-control" id="inlineFormInput" placeholder="Nombre" onChange={handleChange} />
             </div>
             <div>
                 <input type="text" name="email" value={comment.email} className="form-control" placeholder="Email"  onChange={handleChange} />
             </div>
             <div>
-                <textarea name="comment" value={comment.comment} className="form-control" rows={3} placeholder="Comment" onChange={handleChange}></textarea>
+                <textarea name="comment" value={comment.comment} className="form-control" rows={3} placeholder="Commentario" onChange={handleChange}></textarea>
             </div>
             <div>
                 <button 
-                    className="btn btn-primary" 
+                    className="btn btn-primary btn-block" 
                     onClick={addComment}
                     disabled={!comment.name || !comment.email || !comment.comment}
                 >
                     {loading && <i className="fa fa-circle-o-notch fa-spin"></i>}
-                    {loading ? 'Loading' : 'Send'}
+                    {loading ? 'Enviando' : 'Enviar'}
                 </button>
 
             </div>

@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import './cards.scss';
 
 const BasicCard: React.FunctionComponent<any> = ({text, image = 'devices.jpg', data}) => {
@@ -33,13 +31,6 @@ const BasicCard: React.FunctionComponent<any> = ({text, image = 'devices.jpg', d
                     }
                 </Card.Text>
             </Card.Body>
-            <div style={{margin: '10px'}}>
-                <Button variant="primary">
-                    <Link to="/web">
-                        More...
-                    </Link>
-                </Button>
-            </div>
         </Card>
     );
 };

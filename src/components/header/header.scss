@@ -1,11 +1,22 @@
-.header-content {
-    height: 100%;
+.header {
+    grid-column: 1;
+    position: relative;
+    min-height: 560px;
+    background-image: url("../../images/header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    // -webkit-clip-path: polygon(0 0, 100% 100%, 100% 100%, 0 100%, 100% 20%, );
+    // clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
 }
+
 .slogan {
     display: block;
-    margin: 20px;
+    text-align: center;
+    margin: 100px 0;
 }
 .white {
-    color: #c3cacf;
+    color: white;
 }
 

@@ -51,12 +51,13 @@ const CommentList: React.FunctionComponent<any> = () => {
   }, []);
 
   return (
-    <div className="comment-list">
+    <div className="comment-list" id="comment">
       {loading && (
         <div className="spinner">
           <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
         </div>
       )}
+      <h2> Nuestros Clientes Opinan. </h2>
       <div className="comments">
         {!loading &&
           comments.length > 0 &&
