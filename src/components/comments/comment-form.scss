@@ -1,15 +1,15 @@
 .comment-form {
     min-width: 300px;
-    max-width: 350px;
+    width: 400px;
     
     h1  {
         color: #F2F2F2;
     }
-
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
-    margin: 1em;    
+    padding: 10px;
     
     .btn:disabled {
         background: #F2F2F2 !important;
@@ -19,5 +19,5 @@
     .fa {
         margin-left: -10px;
         margin-right: 8px;
-      }
+    }
 }

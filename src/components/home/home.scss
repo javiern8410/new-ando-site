@@ -4,13 +4,10 @@
     position: relative;
     margin-top: -200px;
 
-    .justify-end {
-        justify-items: end;
-    }
-    
     .container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        justify-items: center;
         grid-gap: 1em;
     
         h2 {

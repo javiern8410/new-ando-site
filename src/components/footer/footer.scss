@@ -3,6 +3,7 @@
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
     position: relative;
     background: #000;
+    font-size: 18px;
     color: #fff;
 
     &::before {
@@ -13,7 +14,7 @@
         width: 100%;
         height: 100%;
         background-image: url(../../images/footer-bg2.jpg);
-        opacity: 0.4;
+        opacity: 0.3;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -22,9 +23,22 @@
 
     .footer-top {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         justify-items: center;
-        padding: 120px 0 90px 0;
+        padding: 120px 10px 80px 10px;
+
+        .ando-mision {
+            width: 340px;
+            padding: 0 30px;
+            line-height: 2em;
+        }
+
+        .footer-mid {
+            border-left: 1px solid rgba(255, 255, 255, 0.7);
+            border-right: 1px solid rgba(255, 255, 255, 0.7);
+            width: 100%;
+            text-align: center;
+        }
     }
 
     .footer-bottom {

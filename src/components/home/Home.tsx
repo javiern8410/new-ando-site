@@ -7,7 +7,7 @@ const Home: React.FunctionComponent = () => {
 	return (
 		<React.Fragment>
 			<div className="main-content">
-				<div className="container justify-end">
+				<div className="container">
 					<div>
 						<h2 style={{padding: '10px 0', textAlign: 'center'}}>Es Muy Sencillo: Son Profesionales</h2>
 						<img src={homeImg} alt="" className="img-fluid img-thumbnail float-left" />
