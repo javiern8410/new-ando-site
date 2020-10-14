@@ -6,9 +6,15 @@ const Logo = () => {
     return (
         <div className="logo">
             <img src={logo} alt="AndoPQ Software Solutions" />
-            <div>
-                <span>AndoPQ</span>
-                <span>Software Solutions</span>
+            <div className="logo-text">
+                <div className="logo-name">
+                    AndoPQ
+                </div>
+                <div className="logo-slogan">
+                    <span>Software</span>
+                    <span>&</span>
+                    <span>Sales Solutions</span>
+                </div>
             </div>
         </div>
     );

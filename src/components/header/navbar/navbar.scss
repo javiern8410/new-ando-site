@@ -2,15 +2,13 @@
     box-sizing: border-box;
     height: 60px;
     width: 100%;
-    background-color: rgba(0,0,0, 0.6) !important;
-    position: relative;
     display: flex;
     justify-content: space-between;
-    position: sticky;
     z-index: 100;
+    padding: 5px 30px 10px 10px;
   }
 
-  $link-items: 2;
+  $link-items: 1;
   
   .nav > .nav-header {
     display: inline;
@@ -30,17 +28,22 @@
     display: inline;
     font-size: 18px;
   }
+
+  
   
   .nav > .nav-links > a {
+    border-bottom: 3px solid transparent;
+    padding: 15px;
     display: inline-block;
-    padding: 15px 10px 13px 10px;
     text-decoration: none;
+    font-weight: 500;
     color: #efefef;
     height: 60px;
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(34, 13, 61, 0.3);
+    border-bottom: 3px solid #fff;
+    transition: all 0.3s ease-in-out;
   }
   
   .nav > #nav-check {
@@ -79,6 +82,10 @@
       overflow-y: hidden;
       top: 60px;
       left: 0px;
+
+      .header-phone {
+        display: none;
+      }
     }
     .nav > .nav-links > a {
       display: block;

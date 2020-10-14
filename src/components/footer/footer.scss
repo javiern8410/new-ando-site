@@ -32,16 +32,21 @@
         }
 
         .ando-mision {
-            width: 340px;
+            max-width: 380px;
             padding: 0 30px;
             line-height: 2em;
         }
 
         .footer-mid {
-            border-left: 1px solid rgba(255, 255, 255, 0.4);
-            border-right: 1px solid rgba(255, 255, 255, 0.4);
             width: 100%;
             text-align: center;
+        }
+    }
+
+    @media (min-width:600px) {
+        .footer-top .footer-mid{
+            border-left: 1px solid rgba(255, 255, 255, 0.4);
+            border-right: 1px solid rgba(255, 255, 255, 0.4);
         }
     }
 
@@ -49,6 +54,7 @@
         background-color: rgba(30, 30, 54, 0.8);
         height: 80px;
         display: flex;
+        font-size: 14px;
         justify-content: center;
         align-items: center;
     }

@@ -1,48 +1,52 @@
 import React from "react";
 import "./form.scss";
 
+const noSubmit = (e:any) => {
+  e.preventDefault();
+  alert("Muchas Gracias, recibimos ");
+  const form:any = document.getElementById("capture");
+  form && form.reset();
+}
+
 const Form: React.FunctionComponent<any> = () => {
   return (
-    <div className="form-container">
-      <div className="form-header">
-        <h4 style={{margin: '10px 0px'}}>
-            ¡Descubre la Potencia que le Damos a Tu Negocio!
-        </h4>
-        <p>
-         Accede al Demo que Hemos Preparado Exclusivamente Para Tí AHORA...
-        </p>
-      </div>
-      <div className="form-body">
-        <form className="ASdasd">
-          <div className="form-group">
+    <div className="form-container" id="capture-form">
+        <form id="capture" method="post" onSubmit={noSubmit}>
+          <div className="form-title">
+            <h3>
+              Accede al Demo que Hemos Preparado Para Tí...
+            </h3>
+          </div>
+          <div>
             <label>Nombre</label>
-            <input type="text" name="name" className="form-control" required />
           </div>
-          <div className="form-group">
+
+          <div>
+            <input type="text" className="form-control form-control-lg" required />
+          </div>
+
+          <div>
             <label>Agencia</label>
-            <input
-              type="text"
-              name="agency"
-              className="form-control"
-              required
-            />
           </div>
-          <div className="input-container">
+
+          <div>
+            <input type="text" className="form-control form-control-lg" required />
+          </div>
+
+          <div>
             <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              required
-            />
           </div>
+
+          <div>
+            <input type="email" className="form-control form-control-lg" required />
+          </div>
+
           <div className="form-footer">
             <button type="submit" className="btn btn-lg btn-purple btn-block">
               ¡Sí, Quiero Ver Mi Demo AHORA!
             </button>
           </div>
         </form>
-      </div>
     </div>
   );
 };

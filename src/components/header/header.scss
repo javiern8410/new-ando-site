@@ -1,22 +1,25 @@
 .header {
     grid-column: 1;
-    position: relative;
-    min-height: 560px;
-    background-image: url("../../images/header-bg.jpg");
-    background-size: cover;
-    background-position: center center;
+
     width: 100%;
     // -webkit-clip-path: polygon(0 0, 100% 100%, 100% 100%, 0 100%, 100% 20%, );
     // clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    // clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
 }
 
 .slogan {
-    display: block;
+    display: flex;
     text-align: center;
-    margin: 100px 0;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+    width: 100%;
+
+    h1 {
+        max-width: 650px;
+        font-size: 3em
+    }
 }
+
 .white {
     color: white;
 }
-

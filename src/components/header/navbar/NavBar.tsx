@@ -8,7 +8,6 @@ const NavBar: React.FunctionComponent = () => {
     let element:any = document.getElementById("nav-check");  
     element.checked = false;
   }
-  
 
   return (
     <div className="nav">
@@ -26,10 +25,11 @@ const NavBar: React.FunctionComponent = () => {
         </label>
       </div>
       <div className="nav-links">
-        <a href="#comment" onClick={uncheckB}>
-          Opiniones
+        <a href="tel:1832674-6255" className="header-phone">
+            <i className="fa fa-whatsapp fa-lg" aria-hidden="true"></i> {'  '}
+            + 1 (832) 674-6255
         </a>
-        <a href="#contact" onClick={uncheckB}>
+        <a href="#capture-form" onClick={uncheckB}>
           Contacto
         </a>
       </div>

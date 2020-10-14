@@ -1,33 +1,120 @@
 @import "../../styles/colors";
 
 .main-content {
-    position: relative;
-    margin-top: -200px;
+	.container {
+		display: grid;
+		margin-top: 30px;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		justify-items: end;
+		grid-gap: 1em;
+	}
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-        justify-items: center;
-        grid-gap: 1em;
-    
-        h2 {
-          color: $color-white;
-        }
-      }
+	.line {
+		color: white;
+		text-align: center;
+		margin: 50px auto;
+	}
+
+	/* .line {
+		overflow: hidden;
+		font-family: Helvetica, sans-serif;
+		white-space: nowrap;
+		font-size: 3.4em;
+		color: #f13b3b;
+		width: 860px;
+		border-right: 2px solid rgba(0, 0, 0, 0.87);
+		animation: animacionIntro 2.8s steps(23, end),
+			animacionBar 1s step-end infinite;
+	}
+
+	@keyframes animacionIntro {
+		0% {
+			width: 0;
+		}
+
+		100% {
+			width: 860px;
+		}
+	}
+
+	@keyframes animacionBar {
+
+		0%,
+		100% {
+			border-color: rgba(241, 59, 59, 0);
+		}
+
+		50% {
+			border-color: rgba(241, 59, 59, 0.87);
+		}
+	} */
+
+
+	.main-section {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.bullet-points {
+	color: white;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: 18px;
+
+	ul {
+		list-style-type: none;
+		padding-left: 10px;
+		margin-top: 20px;
+		li {
+			padding: 5px 0;
+
+			i {
+				margin-right: 10px;
+				color: $color-green-1;
+			}
+		}
+	}
+}
+
+@media (max-width:600px) {
+	.bullet-points {
+		.bullet-points-list {
+			color: black;
+			background-color: rgba(235, 235, 235, 0.5);
+			border-radius: 5px;
+			padding: 5px;
+			margin: 0;
+
+			ul li i {
+				margin-right: 10px;
+				color: $color-green-4;
+			}
+		}
+	}
+}
+
+@media (max-width:370px) {
+	.bullet-points {
+
+		h5 {
+			background-color: rgba(235, 235, 235, 0.8);
+			color: rgb(34, 33, 33);
+			border-radius: 5px;
+			padding: 10px;
+		}
+	}
 }
 
 .brand-row {
-  min-height: 300px;
-  padding: 1em;
+	min-height: 300px;
+	padding: 1em;
 
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    justify-items: end;
-    grid-gap: 1em;
+	.container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		justify-items: end;
+		grid-gap: 1em;
 
-    h2 {
-      color: $color-white;
-    }
-  }
+	}
 }

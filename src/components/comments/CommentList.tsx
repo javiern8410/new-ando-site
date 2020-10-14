@@ -57,7 +57,7 @@ const CommentList: React.FunctionComponent<any> = () => {
           <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
         </div>
       )}
-      <h2> Nuestros Clientes Opinan. </h2>
+      <h1> Nuestros Clientes Opinan. </h1>
       <div className="comments">
         {!loading &&
           comments.length > 0 &&

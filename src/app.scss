@@ -2,14 +2,11 @@
 @import "./styles/colors";
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1em;
-  align-items: stretch;
-
-  div.box {
-    background-color: #f2f2f2;
-  }
+  background-image: url("./images/h1_bg.png");
+  background-size: cover;
+  background-position: center center;
+  overflow: visible;
+  height: 140vh;
 
   .portfolio-row {
     height: auto;
@@ -18,7 +15,7 @@
     .container {
       display: grid;
       grid-template-columns: 1fr;
-      justify-items: center;
+      justify-items: end;
       gap: 1em;
     }
   }
@@ -60,39 +57,6 @@
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
-  }
-
-  #to-top-btn {
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: $color-red-3;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 10px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
-    opacity: 0.6;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   .padding-top-25 {
