@@ -1,23 +1,24 @@
 import React from "react";
-import Header from "./components/header/Header";
-import Home from "./components/home/Home";
-import Footer from "./components/footer/Footer";
+import Main from "./components/main/Main";
+import Features from "./components/features/Features"
 import CommentList from "./components/comments/CommentList";
+import Footer from "./components/footer/Footer";
 import ToTopBtn from "./components/totopbtn/ToTopBtn";
 import "./app.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const App: React.FunctionComponent = () => {
-  return (
-    <React.Fragment>
-        <main className="grid-container" id="top">
-            <Header />
-            <Home />
-            <CommentList />
-            <Footer />
-            <ToTopBtn />
-        </main>
-      </React.Fragment>
-  );
+	return (
+		<>
+			<Main />
+			<Features />
+			<CommentList />
+			<Footer />
+			<ToTopBtn />
+		</>
+	);
 };
 
 export default App;

@@ -5,7 +5,7 @@ import Avatar from '../avatar/Avatar'
 const SingleComment: React.FunctionComponent<any> = ({ comment }) => {
 
     return (
-        <div className="comment-card">
+        <div className="comment-card" data-aos="flip-left">
             <div className="container">
                 <div>
                     <i className="fa fa-quote-left fa-lg" aria-hidden="true"></i>

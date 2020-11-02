@@ -1,0 +1,66 @@
+.main {
+    background-color: rgb(23, 21, 49);
+    background-image: url("../../images/slider-banner.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        width: 100%;
+        max-width: 1280px;
+        align-self: center;
+        margin-top: 40px;
+
+        display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		justify-items: center;
+		grid-gap: 2em;
+        
+        .main-title {
+            color: white;
+            font-weight: 500;
+            
+            .initial-red {
+                color: #fb3b64;
+            }
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: rgba(172, 169, 169, 0.849);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+
+    @media (min-width: 601px) {
+        .main-title {
+            font-size: 76px;
+        }
+
+        .small-text {
+            font-size: 46px;
+        }
+    }
+
+    @media (max-width: 601px) {
+        .main-title {
+            font-size: 36px;
+        }
+
+        .small-text {
+            font-size: 24px;
+        }
+    }
+
+    .main-subtitle {
+        color: white;
+    }
+}

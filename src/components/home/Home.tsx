@@ -6,13 +6,13 @@ const homeImg = require("../../images/homePic.jpg");
 const Home: React.FunctionComponent = () => {
 	return (
 		<React.Fragment>
-			<div className="main-content">
+			<div className="home-content">
 				<div>
 					<h2 className="line">Es Muy Sencillo: Son Profesionales</h2>
 				</div>
 				<div className="container">
 					<div className="main-section">
-						<div>
+						<div  data-aos="fade-up">
 							<img src={homeImg} alt="" className="img-fluid img-thumbnail float-left" />
 						</div>
 						<div className="bullet-points">

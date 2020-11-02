@@ -1,28 +1,32 @@
-.back-top {
-    background: #404DFF;
-    height: 50px;
-    width: 50px;
-    right: 20px;
-    bottom: 18px;
-    position: fixed;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 48px;
-    border: 2px solid transparent;
-    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.76);
-    display: block;
-    opacity: 0.6;
+.back-top  {
+  background: #404DFF;
+  height: 50px;
+  width: 50px;
 
-    a {
-      color: white;
-    }
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
 
-    &:hover {
-      opacity: 1;
-      a {
-          outline: medium none;
-      }
-    }
-    
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 48px;
+  
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+  display: block;
+
+  margin: auto;
+
+  color: #d8d5d5;
+
+  &:hover {
+    outline: medium none;
+  }
+}
+
+.back-top:hover {
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
 }

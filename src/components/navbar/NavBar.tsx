@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.scss";
-import Logo from "../logo/Logo";
 
 const NavBar: React.FunctionComponent = () => {
 
@@ -14,7 +13,7 @@ const NavBar: React.FunctionComponent = () => {
       <input type="checkbox" id="nav-check" />
       <div className="nav-header">
         <div className="nav-title">
-          <Logo />
+          ANDOPQ
         </div>
       </div>
       <div className="nav-btn">

@@ -1,9 +1,9 @@
 @import "../../styles/colors";
 
-.main-content {
+.home-content {
+	background-color: #1a1e4e;
 	.container {
 		display: grid;
-		margin-top: 30px;
 		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 		justify-items: end;
 		grid-gap: 1em;

@@ -10,7 +10,7 @@ const noSubmit = (e:any) => {
 
 const Form: React.FunctionComponent<any> = () => {
   return (
-    <div className="form-container" id="capture-form">
+    <div className="form-container" id="capture-form"  data-aos="fade-left">
         <form id="capture" method="post" onSubmit={noSubmit}>
           <div className="form-title">
             <h3>
