@@ -7,6 +7,7 @@ import ToTopBtn from "./components/totopbtn/ToTopBtn";
 import "./app.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Technologies from "./components/technologies/Technologies";
 AOS.init();
 
 const App: React.FunctionComponent = () => {
@@ -14,6 +15,7 @@ const App: React.FunctionComponent = () => {
 		<>
 			<Main />
 			<Features />
+			<Technologies />
 			<CommentList />
 			<Footer />
 			<ToTopBtn />

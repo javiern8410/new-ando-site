@@ -9,15 +9,18 @@ const Main: React.FunctionComponent = () => {
             <div className="main" id="main">
                 <NavBar />
                 <div className="content">
-                    <div>
+                    <div className="side-left">
                         <div className="main-title">
-                            <span className="initial-red">S</span>imple
-                            <span className="small-text"> and </span>
-                            <span className="initial-red">S</span>mart
+                            <span className="initial-red">R</span>ápido
+                            <span className="small-text"> y </span>
+                            <span className="initial-red">S</span>encillo
 
                         </div>
                         <div className="subtitle">
-                            Software & Sales Service
+                            Ando Software & Sales Service
+                        </div>
+                        <div className="about">
+                            Somos profesionales comprometidos con brindar servicios y respuestas de alto valor agregado
                         </div>
                     </div>
                     <div data-aos="fade-up">

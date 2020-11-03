@@ -24,7 +24,7 @@ const Features: React.FunctionComponent<any> = () => {
 
 	return (
 		<div className="features" id="features">
-			<h1><i className="fa fa-yelp" aria-hidden="true"></i> Awesome <span className="initial-red">  Features </span></h1>
+			<h1><i className="fa fa-yelp" aria-hidden="true"></i> Increibles <span className="initial-red"> Servicios </span></h1>
             <div className="content">
                 <Feature name="Web" icon="web 2.0" />
                 <Feature name="Mobile" icon="web 2.0" />
