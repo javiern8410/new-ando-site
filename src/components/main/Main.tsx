@@ -23,7 +23,7 @@ const Main: React.FunctionComponent = () => {
                             Somos profesionales comprometidos con brindar servicios y respuestas de alto valor agregado
                         </div>
                     </div>
-                    <div data-aos="fade-up">
+                    <div className="header-pic" data-aos="fade-up">
                         <img src={homeImg} alt="Ando PQ Software Solutions" />
                     </div>
                 </div>

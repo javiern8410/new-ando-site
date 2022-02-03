@@ -52,6 +52,10 @@
   }
   
   @media (max-width:600px) {
+
+    .nav {
+      margin: 0;
+    }
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
